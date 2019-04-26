@@ -1,0 +1,697 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<script type="text/ecmascript"> 
+
+var Clock={
+ sec : 0,
+ 
+ 
+  start: function(){
+  var self = this;
+   function pad ( val ) { return val > 9 ? val : "0" + val; }
+    this.interval = setInterval( function(){
+        document.getElementById("seconds").innerHTML=pad(++self.sec%60);
+        document.getElementById("minutes").innerHTML=pad(parseInt(self.sec/60,10));
+        document.getElementById("hours").innerHTML=pad(parseInt(self.sec / 3600, 10));
+    }, 1000);
+    },
+    
+    reset: function(){
+    
+    Clock.sec=null;
+    clearInterval(this.interval);
+    document.getElementById("seconds").innerHTML="00";
+    document.getElementById("minutes").innerHTML="00";
+    document.getElementById("hours").innerHTML="00";
+    },
+    pause: function(){
+    clearInterval(this.interval);
+    delete this.interval;
+    },
+    restart: function(){
+    this.reset();
+    Clock.start();
+    },
+    
+ };   
+    
+</script>
+
+<rect x="0" y="0" width="1600" height="780" style="fill:#405952"/>
+<rect x="440" y="75" width="490" height="490" style="fill:#ffd393"/>
+<rect x="470" y="105" width="430" height="430" style="fill:#ffd393;stroke:#405952;stroke-width:6;"/>
+<line x1="518" y1="105" x2="518" y2="535" style="stroke:#405952;stroke-width:2" />
+<line x1="566" y1="105" x2="566" y2="535" style="stroke:#405952;stroke-width:2" />
+<line x1="614" y1="105" x2="614" y2="535" style="stroke:#405952;stroke-width:4" />
+<line x1="662" y1="105" x2="662" y2="535" style="stroke:#405952;stroke-width:2" />
+<line x1="710" y1="105" x2="710" y2="535" style="stroke:#405952;stroke-width:2" />
+<line x1="758" y1="105" x2="758" y2="535" style="stroke:#405952;stroke-width:4" />
+<line x1="806" y1="105" x2="806" y2="535" style="stroke:#405952;stroke-width:2" />
+<line x1="854" y1="105" x2="854" y2="535" style="stroke:#405952;stroke-width:2" />
+
+<line x1="470" y1="153" x2="900" y2="153" style="stroke:#405952;stroke-width:2" />
+<line x1="470" y1="201" x2="900" y2="201" style="stroke:#405952;stroke-width:2" />
+<line x1="470" y1="249" x2="900" y2="249" style="stroke:#405952;stroke-width:4" />
+<line x1="470" y1="297" x2="900" y2="297" style="stroke:#405952;stroke-width:2" />
+<line x1="470" y1="346" x2="900" y2="346" style="stroke:#405952;stroke-width:2" />
+<line x1="470" y1="394" x2="900" y2="394" style="stroke:#405952;stroke-width:4" />
+<line x1="470" y1="442" x2="900" y2="442" style="stroke:#405952;stroke-width:2" />
+<line x1="470" y1="490" x2="900" y2="490" style="stroke:#405952;stroke-width:2" />
+
+ 
+<foreignObject x="486" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">8</text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="112" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="112" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="534" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">3</text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="631" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">6</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="160" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="160" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+      </div>
+  </foreignObject>
+  <foreignObject x="486" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">7</text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">9</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">2</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="208" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="208" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">5</text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">7</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="256" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="256" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">4</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">5</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">7</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="303" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="303" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">1</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">3</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="353" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="353" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">1</text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">6</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="401" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="401" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">8</text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">8</text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">5</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">1</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="448" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="448" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  <foreignObject x="486" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="490" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+ <foreignObject x="534" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="538" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">9</text>
+      </svg>
+       </div>
+  </foreignObject> 
+  <foreignObject x="582" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="586" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject> 
+    <foreignObject x="631" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="634" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="678" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="682" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="726" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="730" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="774" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="778" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold">4</text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="822" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="826" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+   <foreignObject x="870" y="497" width="26" height="43">
+      <div contenteditable="true" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <svg>
+      <text x="874" y="497" style="fill: orange;font-size: 32px;font-family: serif;" text-anchor="middle" font-weight="bold"> </text>
+      </svg>
+       </div>
+  </foreignObject>
+  
+  <text x="575" y="600" style="fill: #9c9b7a;font-size: 27px;font-family: serif;" font-weight="bold">Available numbers</text>
+<g>
+<rect x="490" y="620" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="one" class="number"/>
+<text x="505" y="655" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">1</text>
+</g>
+<g>
+<rect x="570" y="620" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="two" class="number"/>
+<text x="585" y="655" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">2</text>
+</g>
+<g>
+<rect x="650" y="620" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="three" class="number"/>
+<text x="665" y="655" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">3</text>
+</g>
+<g>
+<rect x="730" y="620" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="four" class="number"/>
+<text x="745" y="655" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">4</text>
+</g>
+<g>
+<rect x="810" y="620" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="five" class="number"/>
+<text x="825" y="655" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">5</text>
+</g>
+<g>
+<rect x="530" y="680" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="six" class="number"/>
+<text x="545" y="715" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">6</text>
+</g>
+<g>
+<rect x="610" y="680" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="seven" class="number"/>
+<text x="625" y="715" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">7</text>
+</g>
+<g>
+<rect x="690" y="680" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="eight" class="number"/>
+<text x="705" y="715" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">8</text>
+</g>
+<g>
+<rect x="770" y="680" rx="10" ry="10" width="50" height="50" fill="#ffd393" id="nine" class="number"/>
+<text x="785" y="715" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">9</text>
+</g>
+
+
+<foreignObject x="1000" y="140" width="200" height="70">
+      <div id="basicUsage" style="font-size: 200%; font-weight: bold" xmlns="http://www.w3.org/1999/xhtml">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
+</foreignObject>
+
+<g>
+<rect x="1000" y="230" rx="10" ry="10" width="300" height="60" fill="#ff974f" onclick="Clock.start()"/>
+<text x="1020" y="270" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">Start Timer</text>
+</g>
+
+<g>
+<rect x="1000" y="320" rx="10" ry="10" width="300" height="60" fill="#ff974f" onclick="Clock.pause()"/>
+<text x="1020" y="360" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">Pause Timer</text>
+</g>
+
+<g>
+<rect x="1000" y="410" rx="10" ry="10" width="300" height="60" fill="#ff974f" onclick="Clock.restart()"/>
+<text x="1020" y="450" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">Restart Timer</text>
+</g>
+
+<g>
+<rect x="1000" y="500" rx="10" ry="10" width="300" height="60" fill="#ff974f" onclick="Clock.reset()"/>
+<text x="1020" y="540" style="fill: #405952;font-size: 32px;font-family: serif;" font-weight="bold">Reset Timer</text>
+</g>
+
+<text x="590" y="60" style="fill: #9c9b7a;font-size: 58px;font-family: serif;" font-weight="bold">Sudoku</text>
+
+
+</svg>
